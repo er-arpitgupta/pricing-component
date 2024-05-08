@@ -1,0 +1,186 @@
+@font-face {
+  font-family: Montserrat;
+  src: url("./Montserrat.ttf");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.pagination {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 15px;
+    display: flex;
+    gap: 30px;
+    font-family: Montserrat;
+    font-weight: 800;
+    z-index: 2;
+    color: white;
+}
+
+.pagination .previous,
+.pagination .next {
+    cursor: pointer;
+}
+
+.disabled {
+    color: rgb(100, 100, 100);
+    cursor: default !important;
+}
+
+.triangle {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    transform: rotate(45Deg);
+    top: -210px;
+    left: -210px;
+    z-index: 1;
+    border: 5px dashed turquoise;
+}
+
+
+.pricing1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(226, 230, 255);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-family: Montserrat;
+}
+
+.pricing1 h1 {
+  font-size: 50px;
+  color: grey;
+  font-weight: 700;
+}
+
+.pricing1 .subscription-toggle {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 10px;
+}
+
+.pricing1 .subscription-toggle input {
+    display: none;
+}
+
+.pricing1 .subscription-toggle label {
+  width: 80px;
+  height: 40px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 30px;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 0px 5px 5px rgba(0,0,255, 0.4);
+  border: 1px solid hsl(234, 14%, 74%);
+}
+
+.pricing1 .subscription-toggle label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  top: 5px;
+  left: 5px;
+  transition: 300ms ease-in-out;
+}
+
+.pricing1 input:checked + label::before {
+    left: 45px;
+}
+
+.pricing1 .all-plans {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pricing1 .plan-category {
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  line-height: 2;
+  border-radius: 10px;
+  min-width: 320px;
+}
+
+.pricing1 .plan-category:nth-child(2) {
+  padding: 60px 20px;
+  background: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.pricing1 .plan-category .plan-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(200, 200, 200);
+}
+
+.pricing1 .plan-category .price-tag {
+  font-size: 60px;
+  font-weight: 800;
+  color: rgb(50, 50, 50);
+}
+
+.pricing1 .plan-category .feature {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(200, 200, 200);
+}
+
+.pricing1 .plan-category hr {
+  border: 1px solid rgb(200, 200, 200);
+}
+
+.pricing1 .plan-category button {
+  padding: 15px;
+  width: 100%;
+  background-color: hsl(237, 63%, 64%);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+  border: 1px solid hsl(237, 63%, 64%);
+  transition: 300ms ease-in-out;
+}
+
+.pricing1 .plan-category button:hover {
+  color: hsl(237, 63%, 64%);
+  background-color: transparent;
+  border: 1px solid hsl(234, 14%, 74%);
+}
+
+.pricing1 .plan-category:nth-child(2) .plan-name,
+.pricing1 .plan-category:nth-child(2) .feature,
+.pricing1 .plan-category:nth-child(2) .price-tag {
+  color: white;
+}
+
+.pricing1 .plan-category:nth-child(2) button {
+  background: white;
+  border: 1px solid white;
+  color: hsl(237, 63%, 64%);
+}
+
+.pricing1 .plan-category:nth-child(2) button:hover {
+  background-color: transparent;
+  color: white;
+}
