@@ -41,12 +41,12 @@ p {
     position: absolute;
     width: 400px;
     height: 400px;
-    background-color: black;
+    background: linear-gradient(#CDE8E5, #7AB2B2);
     transform: rotate(45Deg);
     top: -210px;
     left: -210px;
     z-index: 1;
-    border: 5px dashed turquoise;
+    border: 4px dashed #1A4D2E;
 }
 
 
