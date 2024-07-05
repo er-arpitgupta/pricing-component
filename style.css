@@ -101,7 +101,7 @@ p {
   text-align: center;
   line-height: 1.5;
   border-radius: 10px;
-  min-width: 260px;
+  min-width: 220px;
 }
 
 .pricing1 .plan-category:nth-child(2) {
